@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>interactive · calculator</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+    <div class="calculator-card" role="application" aria-label="interactive calculator">
+
+        <div class="calc-header">
+            <h2><i class="fas fa-calculator" style="margin-right: 10px; opacity: 0.6;"></i> calc</h2>
+            <i class="fas fa-arrow-right-arrow-left" style="font-size: 1.2rem; opacity: 0.4;"></i>
+        </div>
+
+        <!-- display -->
+        <div class="display" id="display">
+            <div class="expression" id="expression"></div>
+            <div class="result" id="result">0</div>
+        </div>
+
+        <!-- buttons -->
+        <div class="button-grid">
+
+            <!-- row 1 -->
+            <button class="btn btn-clear" data-value="clear" aria-label="clear all">AC</button>
+            <button class="btn btn-backspace" data-value="backspace" aria-label="backspace"><i
+                    class="fas fa-delete-left"></i></button>
+            <button class="btn btn-percent" data-value="%">%</button>
+            <button class="btn btn-operator" data-value="/">÷</button>
+
+            <!-- row 2 -->
+            <button class="btn" data-value="7">7</button>
+            <button class="btn" data-value="8">8</button>
+            <button class="btn" data-value="9">9</button>
+            <button class="btn btn-operator" data-value="*">×</button>
+
+            <!-- row 3 -->
+            <button class="btn" data-value="4">4</button>
+            <button class="btn" data-value="5">5</button>
+            <button class="btn" data-value="6">6</button>
+            <button class="btn btn-operator" data-value="-">−</button>
+
+            <!-- row 4 -->
+            <button class="btn" data-value="1">1</button>
+            <button class="btn" data-value="2">2</button>
+            <button class="btn" data-value="3">3</button>
+            <button class="btn btn-operator" data-value="+">+</button>
+
+            <!-- row 5 -->
+            <button class="btn btn-zero" data-value="0">0</button>
+            <button class="btn" data-value=".">.</button>
+            <button class="btn btn-equal" data-value="=" aria-label="equals">=</button>
+        </div>
+
+        <div class="footer-note">
+            <i class="fas fa-circle" style="font-size: 0.3rem; vertical-align: middle;"></i> interactive · built with <i
+                class="fas fa-heart" style="color: #b13e3e; opacity: 0.5;"></i>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
